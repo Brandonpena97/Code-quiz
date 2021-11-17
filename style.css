@@ -1,0 +1,40 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#welcome-message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+#start-btn {
+    color:white;
+    background-color:indigo;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#start-btn:hover{
+    background-color:rgb(171, 49, 175);
+
+}
+
+#question-section {
+    display: none;
+}
+
+#question-section2 {
+    display: none;
+}
+
+#question-section3 {
+    display: none;
+}
