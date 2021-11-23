@@ -27,22 +27,95 @@
 
 }
 
-#question-section {
+
+
+.question-section {
     display: none;
 }
 
-#question-section2 {
+.question-section2 {
     display: none;
 }
 
-#question-section3 {
+.question-section3 {
     display: none;
 }
 
-#question-section4 {
+.question-section4 {
     display: none;
 }
 
-#queston-section5 {
+.question-section5 {
     display: none;
+}
+
+#high-scores {
+    display: none;
+}
+
+
+
+.next-question {
+    color:white;
+    background-color:indigo;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px
+}
+
+.next-question:hover{
+    background-color:rgb(171, 49, 175);
+}
+
+.next-question2 {
+    color:white;
+    background-color:indigo;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px
+}
+
+.next-question2:hover{
+    background-color:rgb(171, 49, 175);
+}
+
+.next-question3{
+    color:white;
+    background-color:indigo;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px
+}
+
+.next-question3:hover{
+    background-color:rgb(171, 49, 175);
+}
+
+.next-question4{
+    color:white;
+    background-color:indigo;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px
+}
+
+.next-question4:hover{
+    background-color:rgb(171, 49, 175);
+}
+
+.next-question5{
+    color:white;
+    background-color:indigo;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px
+}
+
+.next-question5:hover{
+    background-color:rgb(171, 49, 175);
 }

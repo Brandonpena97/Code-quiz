@@ -14,7 +14,7 @@
         <a href="">
             <h3>View High Scores</h3>
         </a>
-        <h3>Time:0</h3>
+        <h3 id="timer">Time</h3>
     </header>
 
     <main id="welcome-message">
@@ -25,58 +25,72 @@
         <button id="start-btn">Start Quiz</button>
     </main>
 
-    <section id="question-section">
+    <section class="question-section">
         <h3>What does HTML stand for ?</h3>
         <ul>
-            <li><button>HyperText Markup Language</button></li>
-            <li><button>Hyper Markup Langauge</button></li>
-            <li><button>Extensible Markup Language</button></li>
-            <li><button>HowTo Markup Langauge</button></li>
-            <li><button id="next-question">Next Question</button></li>
-
+            <li><button class="next-question">HyperText Markup Language</button></li>
+            <li><button class="next-question">Hyper Markup Langauge</button></li>
+            <li><button class="next-question">Extensible Markup Language</button></li>
+            <li><button class="next-question">HowTo Markup Langauge</button></li>
         </ul>
-
+        <hr/>
+        <p id="status"></p>
     </section>
 
-    <section id="question-section2">
+    <section class="question-section2">
         <h3>What does CSS stand for?</h3>
-        <li><button>Creating Style Sheet</button></li>
-        <li><button>Coding Style Sheet</button></li>
-        <li><button>Cascading Style Sheet</button></li>
-        <li><button>Color Style Sheet</button></li>
-        <li><button id="next-question2">Next Question</button></li>
+        <ul>
+            <li><button class="next-question2">Creating Style Sheet</button></li>
+            <li><button class="next-question2">Coding Style Sheet</button></li>
+            <li><button class="next-question2">Cascading Style Sheet</button></li>
+            <li><button class="next-question2">Color Style Sheet</button></li>
+        </ul>
+        <p id="status2"></p>
+
     </section>
 
-    <section id="question-section3">
-        <li>
-            <h3>What does DOM stand for?</h3>
-        </li>
-        <li><button>Dominant Object Model</button></li>
-        <li><button>Document Object Model</button></li>
-        <li><button>Definition Object Model</button></li>
-        <li><button>Data Object Model</button></li>
-        <li><button id="next-question3">Next Question</button></li> 
+    <section class="question-section3">
+
+        <h3>What does DOM stand for?</h3>
+        <ul>
+            <li><button class="next-question3">Dominant Object Model</button></li>
+            <li><button class="next-question3">Document Object Model</button></li>
+            <li><button class="next-question3">Definition Object Model</button></li>
+            <li><button class="next-question3">Data Object Model</button></li>
+        </ul>
+        <p id="status3"></p>
     </section>
 
-    <section id="question-section4">
-        <li>
-            <h3>How many computer languages are there?</h3>
-        </li>
-        <li><button>10</button></li>
-        <li><button>50</button></li>
-        <li><button>100</button></li>
-        <li><button>700</button></li>
-        <li><button id="next-question4">Next Question</button></li>
+    <section class="question-section4">
+
+        <h3>How many computer languages are there?</h3>
+        <ul>
+            <li><button class="next-question4">10</button></li>
+            <li><button class="next-question4">50</button></li>
+            <li><button class="next-question4">100</button></li>
+            <li><button class="next-question4">700</button></li>
+        </ul>
+        <p id=status4></p>
     </section>
 
-    <section id="question-section5">
-        <li>
-            <h3>What is the process of finding errors and fixing them within a program?</h3>
-        </li>
-        <li><button>Compiling</button></li>
-        <li><button>Executing</button></li>
-        <li><button>Debugging</button></li>
-        <li><button>Scanning</button></li>
+    <section class="question-section5">
+
+        <h3>What is the process of finding errors and fixing them within a program?</h3>
+        <ul>
+            <li><button class="next-question5">Compiling</button></li>
+            <li><button class="next-question5">Executing</button></li>
+            <li><button class="next-question5">Debugging</button></li>
+            <li><button class="next-question5">Scanning</button></li>
+        </ul>
+        <p id="status5"></p>
+    </section>
+
+    <section id="high-scores">
+        <h3>All Done!</h3>
+        <h4>Enter your initials</h4>
+        <textarea> </textarea>
+        <button>Submit</button>
+
     </section>
 
 
