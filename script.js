@@ -145,3 +145,7 @@ for(let i = 0; i < nextQuestion3.length; i++){
 for(let i = 0; i < nextQuestion4.length; i++){
     nextQuestion4[i].addEventListener("click", displayQuestion5)
 }
+
+for (let i = 0; i < nextQuestion5.length;  i++){
+    nextQuestion5[i].addEventListener("click", displayHighscores)
+}

@@ -119,3 +119,27 @@
 .next-question5:hover{
     background-color:rgb(171, 49, 175);
 }
+
+.initial-text{
+    background-color:whitesmoke;
+    padding: 10px;
+    color: rgb(171, 49, 175);
+    width: 10%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.initial-button{
+    color:white;
+    background-color:indigo;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px
+}
+
+.initial-button:hover{
+    background-color:rgb(171, 49, 175);
+}
+
