@@ -9,11 +9,11 @@ function displayQuestion() {
     var timer = 75;
     var countdownTimer;
 
-   countdownTimer = setInterval(function () {
+    countdownTimer = setInterval(function () {
         console.log(timer);
         myTimerElement.textContent = timer;
 
-        if(timer <=0) {
+        if (timer <= 0) {
             clearInterval(countdownTimer);
         }
 
@@ -21,7 +21,7 @@ function displayQuestion() {
     }, 1000)
 }
 
-function displayQuestion2 (event) {
+function displayQuestion2(event) {
     console.log(event.target.textContent)
 
     // check if the user selected the correct answer
@@ -30,7 +30,7 @@ function displayQuestion2 (event) {
 
     var statusEl = document.querySelector("#status");
 
-    if (selectedAnswer == correctAnswer){
+    if (selectedAnswer == correctAnswer) {
         statusEl.textContent = "Correct!"
     } else {
         statusEl.textContent = "Wrong!"
@@ -41,7 +41,7 @@ function displayQuestion2 (event) {
     questionSection2.style.display = "block";
 }
 
-function displayQuestion3 (event) {
+function displayQuestion3(event) {
     console.log(event.target.textContent)
 
     var selectedAnswer = event.target.textContent;
@@ -49,7 +49,7 @@ function displayQuestion3 (event) {
 
     var status2El = document.querySelector("#status2")
 
-    if (selectedAnswer == correctAnswer){
+    if (selectedAnswer == correctAnswer) {
         status2El.textContent = "Correct!"
     } else {
         status2El.textContent = "Wrong!"
@@ -60,7 +60,7 @@ function displayQuestion3 (event) {
     questionSection3.style.display = "block";
 }
 
-function displayQuestion4 (event) {
+function displayQuestion4(event) {
     console.log(event.target.textContent)
 
     var selectedAnswer = event.target.textContent;
@@ -68,7 +68,7 @@ function displayQuestion4 (event) {
 
     var status3El = document.querySelector("#status3")
 
-    if (selectedAnswer == correctAnswer){
+    if (selectedAnswer == correctAnswer) {
         status3El.textContent = "Correct!"
     } else {
         status3El.textContent = "Wrong!"
@@ -78,7 +78,7 @@ function displayQuestion4 (event) {
     questionSection4.style.display = "block";
 }
 
-function displayQuestion5 (event) {
+function displayQuestion5(event) {
     console.log(event.target.textContent)
 
     var selectedAnswer = event.target.textContent;
@@ -86,7 +86,7 @@ function displayQuestion5 (event) {
 
     var status4El = document.querySelector("#status4")
 
-    if (selectedAnswer == correctAnswer){
+    if (selectedAnswer == correctAnswer) {
         status4El.textContent = "Correct!"
     } else {
         status4El.textContent = "Wrong!"
@@ -96,7 +96,7 @@ function displayQuestion5 (event) {
     questionSection5.style.display = "block";
 }
 
-function displayHighscores (event) {
+function displayHighscores(event) {
     console.log(event.target.textContent)
 
     var selectedAnswer = event.target.textContent;
@@ -104,7 +104,7 @@ function displayHighscores (event) {
 
     var status5El = document.querySelector("#status5")
 
-    if (selectedAnswer == correctAnswer){
+    if (selectedAnswer == correctAnswer) {
         status5El.textContent = "Correct!"
     } else {
         status5El.textContent = "Wrong!"
@@ -120,7 +120,7 @@ var nextQuestion = document.querySelectorAll(".next-question")
 var nextQuestion2 = document.querySelectorAll(".next-question2")
 var nextQuestion3 = document.querySelectorAll(".next-question3")
 var nextQuestion4 = document.querySelectorAll(".next-question4")
-var nextQuestion5 = document.querySelectorAll (".next-question5")
+var nextQuestion5 = document.querySelectorAll(".next-question5")
 
 
 
@@ -128,24 +128,36 @@ var nextQuestion5 = document.querySelectorAll (".next-question5")
 startButton.addEventListener("click", displayQuestion)
 
 
-for(let i = 0; i < nextQuestion.length; i++){
+for (let i = 0; i < nextQuestion.length; i++) {
     nextQuestion[i].addEventListener("click", displayQuestion2)
 }
 
 
-for(let i = 0; i < nextQuestion2.length; i++){
+for (let i = 0; i < nextQuestion2.length; i++) {
     nextQuestion2[i].addEventListener("click", displayQuestion3)
 }
 
 
-for(let i = 0; i < nextQuestion3.length; i++){
+for (let i = 0; i < nextQuestion3.length; i++) {
     nextQuestion3[i].addEventListener("click", displayQuestion4)
 }
 
-for(let i = 0; i < nextQuestion4.length; i++){
+for (let i = 0; i < nextQuestion4.length; i++) {
     nextQuestion4[i].addEventListener("click", displayQuestion5)
 }
 
-for (let i = 0; i < nextQuestion5.length;  i++){
+for (let i = 0; i < nextQuestion5.length; i++) {
     nextQuestion5[i].addEventListener("click", displayHighscores)
 }
+
+
+function saveScore() {
+
+    var initialText = document.querySelector(".initial-text");
+    var myTimerElement = document.querySelector("#timer");
+    
+    localStorage.setItem("initialText.value", "myTimerElement.textContent");
+}
+
+var initialButton = document.querySelector(".initial-button");
+initialButton.addEventListener("click", saveScore);
